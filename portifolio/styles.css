@@ -248,7 +248,7 @@ section {
 
 @media (max-width: 600px) {
   html {
-      font-size: 70%;
+      font-size: 40%;
   }
 
   .heading {
@@ -303,7 +303,9 @@ section {
   .heading {
       font-size: 2.5rem;
   }
-
+html{
+  font-size: 50%;
+}
   .btn {
       padding: 0.7rem 2rem;
       font-size: 1.3rem;
@@ -349,7 +351,9 @@ section {
   .menu-btn {
       display: none; /* Oculta o botão de menu */
   }
-
+html{
+  font-size: 60%;
+}
   .icons {
       display: flex; /* Exibe os ícones de redes sociais */
   }
@@ -364,6 +368,9 @@ section {
       font-size: 3rem;
   }
 
+  html{
+    font-size: 70%;
+  }
   .btn {
       padding: 0.8rem 2.5rem;
       font-size: 1.5rem;
