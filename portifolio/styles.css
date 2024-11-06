@@ -158,6 +158,7 @@ section {
   color: var(--bg);
   text-transform: none;
   color:var(--bg);
+  text-align: justify ;
 }
 
 .home .image .photo {
