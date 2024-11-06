@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --main-color: #22333B;
+  --bg: #0A0908;
+  --bg-card: #0A0908;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  --font-color: #F2F4F3;
+  --color-bg: #F42C04;
+}
+
+* {
+  font-family: 'roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 85%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #807c7c;
+  border-radius: 5rem;
+}
+
+section {
+  padding: 2rem 7%;
+}
+
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+
+.heading span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--color-bg);
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+  background: #6b6b6b;
+  color: var(--bg);
+  font-weight: bold;
+}
+
+.header {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 7%;
+  border-bottom: var(--border);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .logo img {
+  width: 6.5rem ;
+  height: 6.5rem;
+  border-radius: 100%;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  color: #F42C04;
+  border-bottom: 0.1rem solid #F42C04;
+  padding-bottom: 0.5rem;
+}
+
+.header .icons {
+  display: flex;
+  align-items: center;
+}
+
+.header .icons div {
+  margin-left: 2rem;
+}
+
+.header .icons div ion-icon {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.header .icons div ion-icon:hover {
+  color: #F42C04;
+}
+
+#menu-btn {
+  display: none;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: url(rm380-13.jpg) no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+.home .content {
+  max-width: 60rem;
+  position: relative;
+
+}
+
+.home .content h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--bg);
+
+}
+
+.home .content p {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.8;
+  color: var(--bg);
+  text-transform: none;
+  color:var(--bg);
+}
+
+.home .image .photo {
+    width: 50%;
+    height: 50%;
+    border-radius: 10rem;
+}
+
+.projects{
+    background: var(--main-color);
+    
+}
+
+.projects .container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+
+
+}
+
+.projects .title{
+  color: #feebc8;
+}
+.projects .container .cards {
+  display: flex;
+  gap: 2rem;
+  
+
+  
+} 
+.projects .container .cards .pizzaria{
+    width: 100%;
+    max-width: 900px; 
+    height: 100%;
+    border-radius: 2%;
+    
+}
+.projects .container .cards .cards1{
+  background: #feebc8;
+  padding: 1rem;
+  border-radius: 2%;
+}
+.projects .container .cards .cards1 .project-title{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #F42C04;
+}
+
+.projects .container .cards .cards1 .btn-container .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+.description{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.btn-container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.projects .title{
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.footer {
+    background: var(--bg);
+}
+
+.footer-bottom{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-card);
+    color: var(--font-color);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  html {
+      font-size: 70%;
+  }
+
+  .heading {
+      font-size: 2rem;
+  }
+
+  .btn {
+      padding: 0.6rem 1.5rem;
+      font-size: 1.2rem;
+  }
+
+  .header {
+      padding: 1rem 5%;
+      font-size: 1rem;
+  }
+
+  .header .navbar a {
+      font-size: 1.2rem;
+  }
+
+  .home .content h3 {
+      font-size: 3rem;
+  }
+
+  .home .content p {
+      font-size: 1.2rem;
+  }
+
+  .projects .container {
+      grid-template-columns: 1fr; /* Exibe uma coluna */
+  }
+
+  .projects .container .cards {
+      flex-direction: column; /* Coloca os cards em coluna */
+  }
+
+  .projects .container .cards .pizzaria {
+      max-width: 100%;
+  }
+
+  .projects .container .cards .cards1 .project-title {
+      font-size: 1.5rem;
+  }
+
+  .description {
+      font-size: 1.2rem;
+  }
+}
+
+/* Estilos para tablets e smartphones grandes */
+@media (max-width: 768px) {
+  .heading {
+      font-size: 2.5rem;
+  }
+
+  .btn {
+      padding: 0.7rem 2rem;
+      font-size: 1.3rem;
+  }
+  .home{
+    background-size: auto;
+  }
+  .header .navbar a {
+      font-size: 1.3rem;
+  }
+.icons{
+  display: none;
+}
+
+.menu-btn{
+  display:block;
+}
+
+.navbar {
+  display: none;
+}
+  .home .content h3 {
+      font-size: 4rem;
+  }
+
+  .home .content p {
+      font-size: 1.5rem;
+  }
+
+  .projects .container {
+      grid-template-columns: 1fr; /* Uma coluna */
+  }
+
+  .projects .container .cards .cards1 .project-title {
+      font-size: 1.8rem;
+  }
+
+  .description {
+      font-size: 1.3rem;
+  }
+}
+@media (min-width: 769px) {
+  .menu-btn {
+      display: none; /* Oculta o botão de menu */
+  }
+
+  .icons {
+      display: flex; /* Exibe os ícones de redes sociais */
+  }
+
+  .navbar {
+      display: flex; /* Exibe a barra de navegação */
+  }
+}
+/* Estilos para telas de desktops padrão (a partir de 1024px) */
+@media (min-width: 1024px) {
+  .heading {
+      font-size: 3rem;
+  }
+
+  .btn {
+      padding: 0.8rem 2.5rem;
+      font-size: 1.5rem;
+  }
+
+  .header .navbar a {
+      font-size: 1.5rem;
+  }
+
+  .home .content h3 {
+      font-size: 5rem;
+  }
+
+  .home .content p {
+      font-size: 1.8rem;
+  }
+
+  .projects .container {
+      grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+  }
+
+  .projects .container .cards .cards1 .project-title {
+      font-size: 2rem;
+  }
+
+  .description {
+      font-size: 1.4rem;
+  }
+}
+
+/* Estilos para telas grandes (desktops grandes) */
+@media (min-width: 1200px) {
+  .heading {
+      font-size: 4rem;
+  }
+
+  .btn {
+      padding: 0.9rem 3rem;
+      font-size: 1.6rem;
+  }
+
+  .header .navbar a {
+      font-size: 1.6rem;
+  }
+
+  .home .content h3 {
+      font-size: 6rem;
+  }
+
+  .home .content p {
+      font-size: 2rem;
+  }
+
+  .projects .container {
+      grid-template-columns: repeat(1, 1fr); /* Três colunas */
+  }
+
+  .projects .container .cards .cards1 .project-title {
+      font-size: 2.5rem;
+  }
+
+  .description {
+      font-size: 1.5rem;
+  }
+}
